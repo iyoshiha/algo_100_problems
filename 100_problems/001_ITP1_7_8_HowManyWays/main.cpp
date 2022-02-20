@@ -3,11 +3,11 @@ using namespace std;
 
 int main()
 {
-    int n[1024] = {0};
-    int x[1024] = {0};
+    int n[1024];
+    int x[1024];
     int max = 0;
     int i, j, k, l;
-    int ans = 0;
+    int ans;
 
     do {
     cin>> n[max];

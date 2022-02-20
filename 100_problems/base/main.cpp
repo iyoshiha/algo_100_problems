@@ -10,4 +10,8 @@ int main(void)
 /**************************
 link of the problem:
 
+
+Filesize: Byte
+Runtime :   ms
+Memory  :
 ***************************/

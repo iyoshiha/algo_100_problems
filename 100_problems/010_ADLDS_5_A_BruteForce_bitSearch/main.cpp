@@ -12,9 +12,9 @@ int main(void)
     int A[n]; For(i, n) cin >> A[i];
     int q; cin >> q;
     int M[q]; For(i, q) cin >> M[i];
-    int i;
 
-
+    for (int i : A)
+    cout << i << endl;
     return 0;
 }
 

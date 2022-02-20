@@ -33,8 +33,10 @@ int main(void)
             j++;
         }
         if (match == true)
+        {
             if (max < count)
                 max = count;
+        }
         else
             count = 0;
         i++;

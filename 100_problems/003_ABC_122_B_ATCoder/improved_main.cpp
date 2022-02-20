@@ -1,5 +1,6 @@
 #include <iostream>
-#include <string>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -30,4 +31,8 @@ int main(void)
 /**************************
 link of the problem:
 https://atcoder.jp/contests/abc122/tasks/abc122_b
+
+Filesize:484 Byte
+Runtime :4ms
+Memory  :3620
 ***************************/

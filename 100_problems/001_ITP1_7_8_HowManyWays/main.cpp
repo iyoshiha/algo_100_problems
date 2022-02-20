@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main(void)
 {
     int n[1024];
     int x[1024];
@@ -42,3 +42,5 @@ int main()
     }
     return 0;
 }
+
+// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_7_B&lang=ja

@@ -32,7 +32,7 @@ int main(void)
             }
             j++;
         }
-        if (match = true)
+        if (match == true)
             if (max < count)
                 max = count;
         else

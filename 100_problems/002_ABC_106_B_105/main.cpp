@@ -9,5 +9,5 @@ int main(void)
 
 /**************************
 link of the problem:
-
+https://atcoder.jp/contests/abc106/tasks/abc106_b
 ***************************/

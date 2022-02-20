@@ -11,7 +11,7 @@ int main(void)
     cin >> n;
     cout << n << endl;
     ans = 0;
-    i = 2;
+    i = 1;
     while (n >= i)
     {
         divisor_count = 2;

@@ -26,11 +26,8 @@ int main(void)
         {
             if (str[i] == substr[j])
             {
-            cout << "str[" <<i << "] = " << str[i] <<" sub[" <<j << "] = "  << substr[j] << endl;
                 count++;
                 match = true;
-                // if (max < count)
-                //     max = count;
                 break;
             }
             j++;
@@ -40,7 +37,6 @@ int main(void)
                 max = count;
         else
             count = 0;
-        cout << "count is :" << count << endl;
         i++;
     }
     cout << max << endl;

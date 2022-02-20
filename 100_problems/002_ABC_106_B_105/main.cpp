@@ -9,7 +9,6 @@ int main(void)
     unsigned int ans;
 
     cin >> n;
-    cout << n << endl;
     ans = 0;
     i = 1;
     while (n >= i)

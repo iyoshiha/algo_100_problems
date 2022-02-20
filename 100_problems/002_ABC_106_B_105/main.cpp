@@ -3,10 +3,10 @@ using namespace std;
 
 int main(void)
 {
-    unsigned char n;
-    unsigned char i, j;
-    unsigned char divisor_count;
-    unsigned char ans;
+    unsigned int n;
+    unsigned int i, j;
+    unsigned int divisor_count;
+    unsigned int ans;
 
     cin >> n;
     cout << n << endl;
@@ -26,7 +26,7 @@ int main(void)
             ans++;
         i += 2;
     }
-    // cout << ans << endl;
+    cout << ans << endl;
     return 0;
 }
 

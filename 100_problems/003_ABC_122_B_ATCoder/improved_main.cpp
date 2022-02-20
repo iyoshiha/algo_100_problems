@@ -7,7 +7,6 @@ int main(void)
 {
     int max;
     int i;
-    string substr = "ACGT";
     string str;
     int count;
     bool match;

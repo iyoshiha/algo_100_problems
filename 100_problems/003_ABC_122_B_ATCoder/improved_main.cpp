@@ -1,52 +1,38 @@
 #include <iostream>
-#include <string>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
 int main(void)
 {
     int max;
-    int i, j;
-    string substr = "ACGT";
     string str;
     int count;
-    bool match;
 
-    cin >> str;
-
-    i = 0;
-    j = 0;
     max = 0;
     count = 0;
-    while (str[i])
+    cin >> str;
+    for (char c : str)
     {
-        match = false;
-        j = 0;
-        while (substr[j])
+        if (c == 'A' || c == 'C' || c == 'G' || c == 'T')
         {
-            if (str[i] == substr[j])
-            {
-                count++;
-                match = true;
-                break;
-            }
-            j++;
-        }
-        if (match == true)
-        {
+            count++;
             if (max < count)
                 max = count;
         }
         else
             count = 0;
-        i++;
     }
     cout << max << endl;
-
     return 0;
 }
 
 /**************************
 link of the problem:
 https://atcoder.jp/contests/abc122/tasks/abc122_b
+
+Filesize:484 Byte
+Runtime :4ms
+Memory  :3620
 ***************************/

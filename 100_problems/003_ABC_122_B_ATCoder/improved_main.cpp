@@ -9,32 +9,23 @@ int main(void)
     int i;
     string str;
     int count;
-    bool match;
-
-    cin >> str;
 
     i = 0;
     max = 0;
     count = 0;
-    while (str[i])
+    cin >> str;
+    for (char c : str)
     {
-        match = false;
         if (str[i] == 'A' || str[i] == 'C' || str[i] == 'G' || str[i] == 'T')
         {
             count++;
-            match = true;
-        }
-        if (match == true)
-        {
             if (max < count)
                 max = count;
         }
         else
             count = 0;
-        i++;
     }
     cout << max << endl;
-
     return 0;
 }
 

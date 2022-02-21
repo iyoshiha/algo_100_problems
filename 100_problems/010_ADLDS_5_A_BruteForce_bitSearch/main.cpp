@@ -1,20 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 #define For(i, times) for(int (i) = 0; times > (i); (i++))
 
 using namespace std;
-
-// typedef struct s_data
-// {
-//     int n;
-//     int *A;
-//     int q;
-//     int *M;
-//     int *ans;
-
-// } t_data;
 
 int main(void)
 {
@@ -24,9 +13,7 @@ int main(void)
     int M[q]; For(i, q) cin >> M[i];
     int ans[q] = {0};
     int result;
-
     int all_patern = (1 << n);
-
 
     for (int row = 1; row < all_patern; row++)
     {
@@ -34,11 +21,10 @@ int main(void)
         for (int i = 0; i < n; i++)
         {
             if (row & (1 << i))
-            result += A[i];
+                result += A[i];
         }
         for (int i = 0; i < q; i++)
         {
-            // if (ans[i] == 1) break;
             if (M[i] == result)
                 ans[i] = 1;
         }
@@ -46,13 +32,10 @@ int main(void)
     for (int i = 0; i < q; i++)
     {
         if (ans[i] == 0)
-        {
             cout << "no" << endl;
-        }
         else
             cout << "yes" << endl;
     }
-
     return 0;
 }
 

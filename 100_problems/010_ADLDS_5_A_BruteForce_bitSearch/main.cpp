@@ -5,6 +5,18 @@
 
 using namespace std;
 
+int answer(int q, int *ans)
+{
+    for (int i = 0; i < q; i++)
+    {
+        if (!(ans[i]))
+            cout << "no" << endl;
+        else
+            cout << "yes" << endl;
+    }
+    exit(0);
+}
+
 int main(void)
 {
     int n; cin >> n;
@@ -14,6 +26,7 @@ int main(void)
     int ans[q] = {0};
     int result;
     int all_patern = (1 << n);
+    int count = 0;
 
     for (int row = 1; row < all_patern; row++)
     {
@@ -26,30 +39,25 @@ int main(void)
         for (int i = 0; i < q; i++)
         {
             if (M[i] == result)
+            {
+                if (ans[i])
+                    continue;
                 ans[i] = 1;
+                count++;
+            }
         }
+        if (count == q) answer(q, ans);
     }
-    for (int i = 0; i < q; i++)
-    {
-        if (!(ans[i]))
-            cout << "no" << endl;
-        else
-            cout << "yes" << endl;
-    }
-    return 0;
+    answer(q, ans);
 }
 
-        // for (int i = 0; i < q; i++)
-        // {
-        // if (!(ans[i]))
-        //     continue;
-        // break;
-        // }
+
+
 /**************************
 link of the problem:
 https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A&lang=ja
 
-Filesize: Byte
-Runtime :   ms
-Memory  :
+Filesize: 1063 Byte
+Runtime :  10 ms
+Memory  :3096
 ***************************/

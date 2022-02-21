@@ -31,7 +31,7 @@ int main(void)
     }
     for (int i = 0; i < q; i++)
     {
-        if (ans[i] == 0)
+        if (!(ans[i]))
             cout << "no" << endl;
         else
             cout << "yes" << endl;
